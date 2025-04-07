@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>My Profile</title> 
+</head> 
+<body> 
+    <h1>John Doe</h1> 
+    <p>I am a web developer with a passion for front-end technologies.</p> 
+    <h2>My Technical Skills</h2> 
+    <ol> 
+        <li>HTML</li> 
+        <li>CSS</li> 
+        <li>JavaScript</li> 
+    </ol> 
+    <footer>Contact me at: john@example.com</footer> 
+</body> 
+</html> 
+
+<form onsubmit="return validateForm()"> 
+    <input type="text" id="name" placeholder="Name"><br> 
+    <input type="email" id="email" placeholder="Email"><br> 
+    <button type="submit">Submit</button> 
+</form> 
+ 
+<script> 
+function validateForm() { 
+    if (!document.getElementById('name').value || 
+!document.getElementById('email').value) { 
+        alert("Both fields are required!"); 
+
+ 
+        return false; 
+    } 
+    return true; 
+} 
+</script>
