@@ -1,0 +1,14 @@
+<form action="#"> 
+    <input type="text" placeholder="Your Name" required><br> 
+    <input type="email" placeholder="Your Email" required><br> 
+    <textarea placeholder="Your Message" required></textarea><br> 
+    <button type="submit">Send</button> 
+</form> 
+<h1 id="heading">Welcome!</h1> 
+<button onclick="changeText()">Change Text</button> 
+ 
+<script> 
+function changeText() { 
+    document.getElementById('heading').innerText = 'Hello, World!'; 
+} 
+</script> 
